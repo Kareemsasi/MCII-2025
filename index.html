@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal Chemistry II Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" xintegrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        #marks-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        #search-container {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 1rem;
+        }
+        #result-table {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 1rem;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 0.5rem;
+            overflow: hidden; /* for rounded corners of the table */
+        }
+        #result-table thead th {
+            background-color: #f7fafc;
+            color: #4a5568;
+            padding: 0.75rem;
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        #result-table tbody td {
+            background-color: white;
+            padding: 0.75rem;
+            text-align: left;
+            color: #718096;
+            border-bottom: 1px solid #edf2f7;
+        }
+        #result-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        #result-table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+        .input-error {
+            border-color: #e53e3e !important;
+            box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2) !important;
+        }
+        .error-message {
+            color: #e53e3e;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+        /* Custom modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center py-8 transition-colors duration-500" style="height: 30vh;">
+        <h1 id="header-title" class="text-2xl font-semibold">Welcome to the Medicinal Chemistry II Student Portal</h1>
+        <p id="header-description" class="text-md mt-2"></p>
+    </header>
+
+    <nav class="flex justify-center py-4">
+        <div class="flex space-x-4">
+            <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Home</a>
+            <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">View Marks</a>
+            <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Instructions</a>
+            <a href="#" data-name="LibNPDB" data-description="Link to the LibNPDB database." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">LibNPDB</a>
+            <a href="#" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Contact Instructor</a>
+        </div>
+    </nav>
+
+    <main id="marks-view" class="container mx-auto">
+        <div id="search-container">
+            <input type="text" id="student-number-input" placeholder="Enter your student number" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <p id="input-caption" class="text-sm text-gray-500 mt-1">Enter your student number</p>
+            <div id="error-message" class="error-message hidden"></div>
+        </div>
+        <button id="search-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">Enter</button>
+        <div id="results-container" class="hidden">
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student Number</th>
+                        <th>Med Exam</th>
+                        <th>Practical Med Exam</th>
+                        <th>Quiz Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+            <p id="percentile-calculation" class="mt-4 text-gray-600"></p>
+            <button id="review-request-button" class="mt-4 bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors duration-300">طلب مراجعة</button>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-facebook-f text-lg"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-researchgate text-lg"></i></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white"><i class="fab fa-youtube text-lg"></i></a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">View Marks</a>
+                <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Instructions</a>
+                <a href="#" data-name="LibNPDB" data-description="Link to the LibNPDB database." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">LibNPDB</a>
+                <a href="#" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Contact Instructor</a>
+            </div>
+            <div class="text-sm">
+                © 2025 LibNPDB, Dr. Kareem Sasi, Misurata University's College of Pharmacy, Libya. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <p id="modal-message"></p>
+            <button id="modal-ok-button" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">OK</button>
+        </div>
+    </div>
+
+    <script>
+        const headerTitle = document.getElementById('header-title');
+        const headerDescription = document.getElementById('header-description');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const searchButton = document.getElementById('search-button');
+        const studentNumberInput = document.getElementById('student-number-input');
+        const resultsContainer = document.getElementById('results-container');
+        const inputCaption = document.getElementById('input-caption');
+        const errorMessage = document.getElementById('error-message');
+        const reviewRequestButton = document.getElementById('review-request-button');
+        const percentileCalculation = document.getElementById('percentile-calculation');
+
+        // Modal elements
+        const modal = document.getElementById('myModal');
+        const modalMessage = document.getElementById('modal-message');
+        const closeButton = document.querySelector('.close-button');
+        const modalOkButton = document.getElementById('modal-ok-button');
+
+        // Function to show custom modal
+        function showModal(message) {
+            modalMessage.textContent = message;
+            modal.style.display = 'flex'; // Use flex to center content
+        }
+
+        // Close modal when close button is clicked
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when OK button is clicked
+        modalOkButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside of the modal content
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        const descriptions = {
+            'Home': 'Welcome to the Medicinal Chemistry II Student Portal.',
+            'View Marks': 'This page allows you to view your marks for assignments, quizzes, and exams.',
+            'Instructions': 'Here you can find instructions on how to use this portal.',
+            'LibNPDB': 'Link to the LibNPDB database.',
+            'Contact Instructor': 'Contact information for your instructor.',
+        };
+
+        let colorIndex = 0;
+        const colors = ['from-indigo-500 to-purple-500', 'from-purple-500 to-pink-500', 'from-pink-500 to-red-500', 'from-red-500 to-orange-500', 'from-orange-500 to-yellow-500'];
+
+        function changeHeaderColor() {
+            colorIndex = (colorIndex + 1) % colors.length;
+            headerTitle.parentElement.className = `bg-gradient-to-r ${colors[colorIndex]} text-white text-center py-8 transition-colors duration-500`;
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                changeHeaderColor();
+                const description = this.getAttribute('data-description');
+                const name = this.getAttribute('data-name');
+                headerTitle.textContent = name;
+                headerDescription.textContent = description;
+            });
+        });
+
+        searchButton.addEventListener('click', function() {
+            const studentNumber = studentNumberInput.value.trim();
+            if (!studentNumber) {
+                inputCaption.textContent = "Please enter your student number.";
+                studentNumberInput.classList.add('input-error');
+                errorMessage.textContent = "Please enter your student number.";
+                errorMessage.classList.remove('hidden');
+                resultsContainer.classList.add('hidden');
+            } else if (!/^\d+$/.test(studentNumber)) {
+                inputCaption.textContent = "Invalid student number format.";
+                studentNumberInput.classList.add('input-error');
+                errorMessage.textContent = "Invalid student number format. Please use only numbers.";
+                errorMessage.classList.remove('hidden');
+                resultsContainer.classList.add('hidden');
+            } else {
+                inputCaption.textContent = "Enter your student number";
+                studentNumberInput.classList.remove('input-error');
+                errorMessage.classList.add('hidden');
+                displayResults(studentNumber);
+            }
+        });
+
+        studentNumberInput.addEventListener('input', function() {
+            if (!this.value.trim()) {
+                inputCaption.textContent = "Please enter your student number.";
+                this.classList.add('input-error');
+                errorMessage.textContent = "Please enter your student number.";
+                errorMessage.classList.remove('hidden');
+                resultsContainer.classList.add('hidden');
+            } else if (!/^\d+$/.test(this.value.trim())) {
+                inputCaption.textContent = "Invalid student number format.";
+                this.classList.add('input-error');
+                errorMessage.textContent = "Invalid student number format. Please use only numbers.";
+                errorMessage.classList.remove('hidden');
+                resultsContainer.classList.add('hidden');
+            } else {
+                inputCaption.textContent = "Enter your student number";
+                this.classList.remove('input-error');
+                errorMessage.classList.add('hidden');
+            }
+        });
+
+        reviewRequestButton.addEventListener('click', function() {
+            showModal('This feature will be connected to a Google Form soon!');
+        });
+
+        async function displayResults(studentNumber) {
+            const resultsTable = document.getElementById('result-table');
+            const tableBody = resultsTable.querySelector('tbody');
+            tableBody.innerHTML = '<tr><td colspan="6" class="text-center text-gray-500">Loading student data...</td></tr>';
+            resultsContainer.classList.remove('hidden');
+
+            const githubRawDataUrl = 'https://raw.githubusercontent.com/Kareemsasi/MCII-2025/refs/heads/main/MCII-20250520-data.json';
+            let dataset = [];
+
+            try {
+                const response = await fetch(githubRawDataUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                dataset = await response.json();
+                console.log("Fetched dataset:", dataset); // Log the fetched dataset for debugging
+            } catch (error) {
+                console.error('Error fetching student data:', error);
+                tableBody.innerHTML = '<tr><td colspan="6" class="text-center text-red-500">Failed to load student data. Please ensure the data source is accessible.</td></tr>';
+                percentileCalculation.textContent = '';
+                return;
+            }
+
+            tableBody.innerHTML = '';
+
+            // Ensure consistent type for comparison and correct property access
+            const studentData = dataset.find(student => String(student['Student Number']) === String(studentNumber));
+
+            if (studentData) {
+                // Parse marks to numbers for calculation
+                const medExam = parseFloat(studentData['Med Exam']);
+                const practicalMedExam = parseFloat(studentData['Practical Med Exam']);
+                const quizMarks = parseFloat(studentData['Quiz Marks']);
+
+                const totalMarks = medExam + practicalMedExam + quizMarks;
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td>${studentData['Student Name']}</td>
+                    <td>${studentData['Student Number']}</td>
+                    <td>${medExam.toFixed(2)}</td>
+                    <td>${practicalMedExam.toFixed(2)}</td>
+                    <td>${quizMarks.toFixed(2)}</td>
+                    <td>${totalMarks.toFixed(2)}</td>
+                `;
+                tableBody.appendChild(newRow);
+
+                const percentile = calculatePercentile(studentNumber, dataset);
+                percentileCalculation.textContent = `Your marks are better than ${percentile.toFixed(2)}% of other students.`;
+            } else {
+                tableBody.innerHTML = '<tr><td colspan="6" class="text-center text-gray-500">Student not found. Please check the student number.</td></tr>';
+                percentileCalculation.textContent = '';
+            }
+        }
+
+        function calculatePercentile(studentNumber, dataset) {
+            // Ensure consistent type for comparison and correct property access
+            const studentData = dataset.find(student => String(student['Student Number']) === String(studentNumber));
+            if (!studentData) return 0;
+
+            // Parse marks to numbers for calculation
+            const studentTotalMarks = parseFloat(studentData['Med Exam']) + parseFloat(studentData['Practical Med Exam']) + parseFloat(studentData['Quiz Marks']);
+            let lowerCount = 0;
+            const otherStudents = dataset.filter(otherStudent => String(otherStudent['Student Number']) !== String(studentNumber));
+
+            if (otherStudents.length === 0) {
+                return 100; // If there's only one student (the current one), they are better than 100% of *other* students (vacuously true)
+            }
+
+            for (let otherStudent of otherStudents) {
+                const otherTotalMarks = parseFloat(otherStudent['Med Exam']) + parseFloat(otherStudent['Practical Med Exam']) + parseFloat(otherStudent['Quiz Marks']);
+                if (otherTotalMarks < studentTotalMarks) {
+                    lowerCount++;
+                }
+            }
+            return (lowerCount / otherStudents.length) * 100;
+        }
+    </script>
+</body>
+</html>

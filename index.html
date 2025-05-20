@@ -32,6 +32,8 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             border-radius: 0.5rem;
             overflow: hidden; /* for rounded corners of the table */
+            margin-left: auto; /* Center the table */
+            margin-right: auto; /* Center the table */
         }
         #result-table thead th {
             background-color: #f7fafc;
@@ -126,7 +128,8 @@
         </div>
         <button id="search-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300 w-full sm:w-auto">Enter</button>
         <div id="results-container" class="hidden w-full">
-            <div class="overflow-x-auto rounded-md shadow-md mt-4"> <table id="result-table">
+            <div class="overflow-x-auto rounded-md shadow-md mt-4">
+                <table id="result-table">
                     <thead>
                         <tr>
                             <th>Student Name</th>
@@ -285,7 +288,8 @@
         });
 
         reviewRequestButton.addEventListener('click', function() {
-            showModal('This feature will be connected to a Google Form soon!');
+            // Open Google Form link in a new tab
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSftK-oe2RY9xGR8nzKFBOlndd_WWDq2nh-UH_Qe3tWGGoKeMw/viewform?usp=header', '_blank');
         });
 
         async function displayResults(studentNumber) {

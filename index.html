@@ -10,13 +10,28 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        #marks-view {
+        main {
+            flex-grow: 1;
+        }
+        /* Styles for the main content views */
+        .page-view {
+            display: none; /* All views are hidden by default */
+            padding: 2rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #marks-view-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
         }
         #search-container {
             width: 100%;
@@ -63,6 +78,19 @@
             font-size: 0.8rem;
             margin-top: 0.5rem;
         }
+        /* Custom card styles for new sections */
+        .info-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
         /* Custom modal styles */
         .modal {
             display: none; /* Hidden by default */
@@ -102,62 +130,128 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center py-8 transition-colors duration-500" style="height: 30vh;">
-        <h1 id="header-title" class="text-2xl font-semibold">Welcome to the Medicinal Chemistry II Student Portal</h1>
+    <header class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center py-8 transition-colors duration-500">
+        <h1 id="header-title" class="text-2xl md:text-3xl font-semibold">Welcome to the Medicinal Chemistry II Student Portal</h1>
         <p id="header-description" class="text-md mt-2"></p>
     </header>
 
-    <nav class="flex justify-center py-4">
-        <div class="flex space-x-4">
-            <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Home</a>
-            <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">View Marks</a>
-            <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Instructions</a>
-            <a href="#" data-name="LibNPDB" data-description="Link to the LibNPDB database." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">LibNPDB</a>
-            <a href="#" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Contact Instructor</a>
+    <nav class="flex justify-center py-4 bg-white shadow-md">
+        <div class="flex flex-wrap justify-center space-x-2 md:space-x-4">
+            <a href="#" data-target="home-view" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 mb-2">Home</a>
+            <a href="#" data-target="marks-view" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 mb-2">View Marks</a>
+            <a href="#" data-target="tools-view" data-name="Chemoinformatic Tools" data-description="Access various chemoinformatic tools." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 mb-2">Chemoinformatic Tools</a>
+            <a href="#" data-target="lectures-view" data-name="Lectures and Lab Materials" data-description="Find your course lectures and lab materials here." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 mb-2">Lectures & Labs</a>
+            <a href="#" data-target="instructions-view" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 mb-2">Instructions</a>
+            <a href="#" data-target="contact-view" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 mb-2">Contact Instructor</a>
         </div>
     </nav>
 
-    <main id="marks-view" class="container mx-auto">
-        <div id="search-container">
-            <input type="text" id="student-number-input" placeholder="Enter your student number" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-            <p id="input-caption" class="text-sm text-gray-500 mt-1">Enter your student number</p>
-            <div id="error-message" class="error-message hidden"></div>
+    <main class="container mx-auto">
+        <!-- Home View (Initially empty) -->
+        <div id="home-view" class="page-view">
+             <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800">Welcome!</h2>
+                <p class="text-gray-600 mt-2">Select an option from the navigation bar to get started.</p>
+            </div>
         </div>
-        <button id="search-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">Enter</button>
-        <div id="results-container" class="hidden">
-            <table id="result-table">
-                <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>Student Number</th>
-                        <th>Med Exam</th>
-                        <th>Practical Med Exam</th>
-                        <th>Quiz Marks</th>
-                        <th>Total Marks</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    </tbody>
-            </table>
-            <p id="percentile-calculation" class="mt-4 text-gray-600"></p>
-            <button id="review-request-button" class="mt-4 bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors duration-300">طلب مراجعة</button>
+
+        <!-- Marks View -->
+        <div id="marks-view" class="page-view">
+            <div id="marks-view-content">
+                 <div id="search-container">
+                    <input type="text" id="student-number-input" placeholder="Enter your student number" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <p id="input-caption" class="text-sm text-gray-500 mt-1">Enter your student number</p>
+                    <div id="error-message" class="error-message hidden"></div>
+                </div>
+                <button id="search-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">Enter</button>
+                <div id="results-container" class="hidden w-full max-w-4xl mt-4">
+                    <table id="result-table">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student Number</th>
+                                <th>Med Exam</th>
+                                <th>Practical Med Exam</th>
+                                <th>Quiz Marks</th>
+                                <th>Total Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <p id="percentile-calculation" class="mt-4 text-gray-600 text-center"></p>
+                    <div class="text-center">
+                        <button id="review-request-button" class="mt-4 bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors duration-300">طلب مراجعة</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Chemoinformatic Tools View -->
+        <div id="tools-view" class="page-view">
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="https://www.libnpdb.ly/draw-structures" target="_blank" rel="noopener noreferrer" class="info-card">
+                    <h3 class="text-xl font-bold text-indigo-600">Draw Structures</h3>
+                    <p class="text-gray-600 mt-2">Create and edit chemical structures with an intuitive drawing tool.</p>
+                </a>
+                <a href="https://www.libnpdb.ly/drug-likeness" target="_blank" rel="noopener noreferrer" class="info-card">
+                    <h3 class="text-xl font-bold text-indigo-600">Drug Descriptors & Likeness</h3>
+                    <p class="text-gray-600 mt-2">Calculate key molecular descriptors and assess drug-likeness properties.</p>
+                </a>
+                <a href="https://www.libnpdb.ly/smiles-to-structure" target="_blank" rel="noopener noreferrer" class="info-card">
+                    <h3 class="text-xl font-bold text-indigo-600">SMILES to Structure</h3>
+                    <p class="text-gray-600 mt-2">Convert SMILES strings into 2D chemical structures instantly.</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Lectures and Lab Materials View -->
+        <div id="lectures-view" class="page-view">
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="info-card">
+                    <h3 class="text-xl font-bold text-purple-600">Lectures</h3>
+                    <p class="text-gray-600 mt-2">Access all course lectures, notes, and presentation slides here.</p>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="info-card">
+                    <h3 class="text-xl font-bold text-purple-600">Drug Design Lab</h3>
+                    <p class="text-gray-600 mt-2">Find materials, instructions, and resources for your lab sessions.</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Instructions View -->
+        <div id="instructions-view" class="page-view">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">How to Use This Portal</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong>Home:</strong> The main landing page.</li>
+                    <li><strong>View Marks:</strong> Enter your student number to check your exam, practical, and quiz marks.</li>
+                    <li><strong>Chemoinformatic Tools:</strong> Access external tools for drawing structures and calculating drug properties.</li>
+                    <li><strong>Lectures & Labs:</strong> Find all your course materials.</li>
+                    <li><strong>Contact Instructor:</strong> Get contact information for your course instructor.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact View -->
+        <div id="contact-view" class="page-view">
+             <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800">Contact Information</h2>
+                <p class="text-gray-600 mt-2">Dr. Kareem Sasi</p>
+                <p class="text-gray-600">Misurata University, College of Pharmacy</p>
+                <p class="text-gray-600">Libya</p>
+            </div>
+        </div>
+
     </main>
 
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-gray-800 text-white py-6 mt-8">
         <div class="container mx-auto text-center">
             <div class="mb-4">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-facebook-f text-lg"></i></a>
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-instagram text-lg"></i></a>
                 <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-researchgate text-lg"></i></a>
                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white"><i class="fab fa-youtube text-lg"></i></a>
-            </div>
-            <div class="flex justify-center space-x-4 mb-4">
-                <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Home</a>
-                <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">View Marks</a>
-                <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Instructions</a>
-                <a href="#" data-name="LibNPDB" data-description="Link to the LibNPDB database." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">LibNPDB</a>
-                <a href="#" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Contact Instructor</a>
             </div>
             <div class="text-sm">
                 © 2025 LibNPDB, Dr. Kareem Sasi, Misurata University's College of Pharmacy, Libya. All rights reserved.
@@ -174,9 +268,13 @@
     </div>
 
     <script>
+        // --- DOM Element Selection ---
         const headerTitle = document.getElementById('header-title');
         const headerDescription = document.getElementById('header-description');
         const navLinks = document.querySelectorAll('.nav-link');
+        const pageViews = document.querySelectorAll('.page-view');
+
+        // Elements for 'View Marks' page
         const searchButton = document.getElementById('search-button');
         const studentNumberInput = document.getElementById('student-number-input');
         const resultsContainer = document.getElementById('results-container');
@@ -191,101 +289,109 @@
         const closeButton = document.querySelector('.close-button');
         const modalOkButton = document.getElementById('modal-ok-button');
 
-        // Function to show custom modal
-        function showModal(message) {
-            modalMessage.textContent = message;
-            modal.style.display = 'flex'; // Use flex to center content
+        // --- Core Functions ---
+        
+        // Function to switch between page views
+        function switchView(targetId) {
+            pageViews.forEach(view => {
+                view.style.display = 'none';
+            });
+            const targetView = document.getElementById(targetId);
+            if (targetView) {
+                targetView.style.display = 'block';
+            }
         }
 
-        // Close modal when close button is clicked
-        closeButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        // Close modal when OK button is clicked
-        modalOkButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        // Close modal when clicking outside of the modal content
-        window.addEventListener('click', (event) => {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        });
-
-        const descriptions = {
-            'Home': 'Welcome to the Medicinal Chemistry II Student Portal.',
-            'View Marks': 'This page allows you to view your marks for assignments, quizzes, and exams.',
-            'Instructions': 'Here you can find instructions on how to use this portal.',
-            'LibNPDB': 'Link to the LibNPDB database.',
-            'Contact Instructor': 'Contact information for your instructor.',
-        };
-
+        // --- Header Color Changer ---
         let colorIndex = 0;
         const colors = ['from-indigo-500 to-purple-500', 'from-purple-500 to-pink-500', 'from-pink-500 to-red-500', 'from-red-500 to-orange-500', 'from-orange-500 to-yellow-500'];
-
         function changeHeaderColor() {
             colorIndex = (colorIndex + 1) % colors.length;
             headerTitle.parentElement.className = `bg-gradient-to-r ${colors[colorIndex]} text-white text-center py-8 transition-colors duration-500`;
         }
 
+        // --- Modal Functions ---
+        function showModal(message) {
+            modalMessage.textContent = message;
+            modal.style.display = 'flex';
+        }
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // --- Event Listeners ---
+
+        // Navigation link clicks
         navLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                
+                // Update header text and color
                 changeHeaderColor();
                 const description = this.getAttribute('data-description');
                 const name = this.getAttribute('data-name');
                 headerTitle.textContent = name;
                 headerDescription.textContent = description;
+
+                // Switch to the target view
+                const targetId = this.getAttribute('data-target');
+                switchView(targetId);
             });
         });
 
-        searchButton.addEventListener('click', function() {
-            const studentNumber = studentNumberInput.value.trim();
-            if (!studentNumber) {
-                inputCaption.textContent = "Please enter your student number.";
-                studentNumberInput.classList.add('input-error');
-                errorMessage.textContent = "Please enter your student number.";
-                errorMessage.classList.remove('hidden');
-                resultsContainer.classList.add('hidden');
-            } else if (!/^\d+$/.test(studentNumber)) {
-                inputCaption.textContent = "Invalid student number format.";
-                studentNumberInput.classList.add('input-error');
-                errorMessage.textContent = "Invalid student number format. Please use only numbers.";
-                errorMessage.classList.remove('hidden');
-                resultsContainer.classList.add('hidden');
-            } else {
-                inputCaption.textContent = "Enter your student number";
-                studentNumberInput.classList.remove('input-error');
-                errorMessage.classList.add('hidden');
-                displayResults(studentNumber);
+        // Search button click on 'View Marks' page
+        if (searchButton) {
+            searchButton.addEventListener('click', function() {
+                const studentNumber = studentNumberInput.value.trim();
+                if (!studentNumber) {
+                    inputCaption.textContent = "Please enter your student number.";
+                    studentNumberInput.classList.add('input-error');
+                    errorMessage.textContent = "Please enter your student number.";
+                    errorMessage.classList.remove('hidden');
+                    resultsContainer.classList.add('hidden');
+                } else if (!/^\d+$/.test(studentNumber)) {
+                    inputCaption.textContent = "Invalid student number format.";
+                    studentNumberInput.classList.add('input-error');
+                    errorMessage.textContent = "Invalid student number format. Please use only numbers.";
+                    errorMessage.classList.remove('hidden');
+                    resultsContainer.classList.add('hidden');
+                } else {
+                    inputCaption.textContent = "Enter your student number";
+                    studentNumberInput.classList.remove('input-error');
+                    errorMessage.classList.add('hidden');
+                    displayResults(studentNumber);
+                }
+            });
+        }
+        
+        // Input validation listener on 'View Marks' page
+        if (studentNumberInput) {
+             studentNumberInput.addEventListener('input', function() {
+                if (this.classList.contains('input-error')) {
+                    this.classList.remove('input-error');
+                    errorMessage.classList.add('hidden');
+                    inputCaption.textContent = "Enter your student number";
+                }
+            });
+        }
+       
+        // Review request button click
+        if (reviewRequestButton) {
+            reviewRequestButton.addEventListener('click', function() {
+                showModal('This feature will be connected to a Google Form soon!');
+            });
+        }
+        
+        // Modal closing listeners
+        closeButton.addEventListener('click', closeModal);
+        modalOkButton.addEventListener('click', closeModal);
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                closeModal();
             }
         });
 
-        studentNumberInput.addEventListener('input', function() {
-            if (!this.value.trim()) {
-                inputCaption.textContent = "Please enter your student number.";
-                this.classList.add('input-error');
-                errorMessage.textContent = "Please enter your student number.";
-                errorMessage.classList.remove('hidden');
-                resultsContainer.classList.add('hidden');
-            } else if (!/^\d+$/.test(this.value.trim())) {
-                inputCaption.textContent = "Invalid student number format.";
-                this.classList.add('input-error');
-                errorMessage.textContent = "Invalid student number format. Please use only numbers.";
-                errorMessage.classList.remove('hidden');
-                resultsContainer.classList.add('hidden');
-            } else {
-                inputCaption.textContent = "Enter your student number";
-                this.classList.remove('input-error');
-                errorMessage.classList.add('hidden');
-            }
-        });
-
-        reviewRequestButton.addEventListener('click', function() {
-            showModal('This feature will be connected to a Google Form soon!');
-        });
-
+        // --- Data Fetching and Display for 'View Marks' ---
         async function displayResults(studentNumber) {
             const resultsTable = document.getElementById('result-table');
             const tableBody = resultsTable.querySelector('tbody');
@@ -297,31 +403,25 @@
 
             try {
                 const response = await fetch(githubRawDataUrl);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 dataset = await response.json();
-                console.log("Fetched dataset:", dataset); // Log the fetched dataset for debugging
             } catch (error) {
                 console.error('Error fetching student data:', error);
-                tableBody.innerHTML = '<tr><td colspan="6" class="text-center text-red-500">Failed to load student data. Please ensure the data source is accessible.</td></tr>';
+                tableBody.innerHTML = '<tr><td colspan="6" class="text-center text-red-500">Failed to load student data. Please try again later.</td></tr>';
                 percentileCalculation.textContent = '';
                 return;
             }
 
             tableBody.innerHTML = '';
-
-            // Ensure consistent type for comparison and correct property access
             const studentData = dataset.find(student => String(student['Student Number']) === String(studentNumber));
 
             if (studentData) {
-                // *** CORRECTION APPLIED HERE ***
-                // Parse marks to numbers for calculation, replacing comma with period
-                const medExam = parseFloat(String(studentData['Med Exam']).replace(',', '.'));
-                const practicalMedExam = parseFloat(String(studentData['Practical Med Exam']).replace(',', '.'));
-                const quizMarks = parseFloat(String(studentData['Quiz Marks']).replace(',', '.'));
-
+                // FIX: Replace comma with period for correct float parsing
+                const medExam = parseFloat(String(studentData['Med Exam']).replace(',', '.')) || 0;
+                const practicalMedExam = parseFloat(String(studentData['Practical Med Exam']).replace(',', '.')) || 0;
+                const quizMarks = parseFloat(String(studentData['Quiz Marks']).replace(',', '.')) || 0;
                 const totalMarks = medExam + practicalMedExam + quizMarks;
+
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
                     <td>${studentData['Student Name']}</td>
@@ -342,29 +442,33 @@
         }
 
         function calculatePercentile(studentNumber, dataset) {
-            // Ensure consistent type for comparison and correct property access
             const studentData = dataset.find(student => String(student['Student Number']) === String(studentNumber));
             if (!studentData) return 0;
-
-            // *** CORRECTION APPLIED HERE ***
-            // Parse marks to numbers for calculation, replacing comma with period
-            const studentTotalMarks = parseFloat(String(studentData['Med Exam']).replace(',', '.')) + parseFloat(String(studentData['Practical Med Exam']).replace(',', '.')) + parseFloat(String(studentData['Quiz Marks']).replace(',', '.'));
+            
+            // FIX: Replace comma with period for correct float parsing
+            const studentTotalMarks = (parseFloat(String(studentData['Med Exam']).replace(',', '.')) || 0) + (parseFloat(String(studentData['Practical Med Exam']).replace(',', '.')) || 0) + (parseFloat(String(studentData['Quiz Marks']).replace(',', '.')) || 0);
+            
             let lowerCount = 0;
             const otherStudents = dataset.filter(otherStudent => String(otherStudent['Student Number']) !== String(studentNumber));
 
-            if (otherStudents.length === 0) {
-                return 100; // If there's only one student (the current one), they are better than 100% of *other* students (vacuously true)
-            }
+            if (otherStudents.length === 0) return 100;
 
             for (let otherStudent of otherStudents) {
-                // *** CORRECTION APPLIED HERE ***
-                const otherTotalMarks = parseFloat(String(otherStudent['Med Exam']).replace(',', '.')) + parseFloat(String(otherStudent['Practical Med Exam']).replace(',', '.')) + parseFloat(String(otherStudent['Quiz Marks']).replace(',', '.'));
+                // FIX: Replace comma with period for correct float parsing
+                const otherTotalMarks = (parseFloat(String(otherStudent['Med Exam']).replace(',', '.')) || 0) + (parseFloat(String(otherStudent['Practical Med Exam']).replace(',', '.')) || 0) + (parseFloat(String(otherStudent['Quiz Marks']).replace(',', '.')) || 0);
                 if (otherTotalMarks < studentTotalMarks) {
                     lowerCount++;
                 }
             }
             return (lowerCount / otherStudents.length) * 100;
         }
+
+        // --- Initial Page Load ---
+        // Show the home view by default when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            switchView('home-view');
+            headerDescription.textContent = document.querySelector('.nav-link[data-target="home-view"]').getAttribute('data-description');
+        });
     </script>
 </body>
 </html>

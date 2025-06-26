@@ -11,13 +11,12 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Ensure main content areas are flexible */
         #marks-view {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 1rem; /* Adjusted padding for smaller screens */
+            padding: 2rem;
         }
         #search-container {
             width: 100%;
@@ -25,15 +24,13 @@
             margin-bottom: 1rem;
         }
         #result-table {
-            width: 100%; /* Ensure table takes full width of its container */
+            width: 100%;
             max-width: 800px;
             margin-top: 1rem;
             border-collapse: collapse;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             border-radius: 0.5rem;
             overflow: hidden; /* for rounded corners of the table */
-            margin-left: auto; /* Center the table */
-            margin-right: auto; /* Center the table */
         }
         #result-table thead th {
             background-color: #f7fafc;
@@ -106,58 +103,56 @@
 </head>
 <body class="bg-gray-100">
     <header class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center py-8 transition-colors duration-500" style="height: 30vh;">
-        <h1 id="header-title" class="text-2xl sm:text-3xl font-semibold px-4">Welcome to the Medicinal Chemistry II Student Portal</h1>
-        <p id="header-description" class="text-md mt-2 px-4"></p>
+        <h1 id="header-title" class="text-2xl font-semibold">Welcome to the Medicinal Chemistry II Student Portal</h1>
+        <p id="header-description" class="text-md mt-2"></p>
     </header>
 
-    <nav class="flex justify-center py-4 px-4">
-        <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 w-full sm:w-auto items-center">
-            <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 w-full text-center sm:w-auto">Home</a>
-            <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 w-full text-center sm:w-auto">View Marks</a>
-            <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 w-full text-center sm:w-auto">Instructions</a>
-            <a href="#" data-name="LibNPDB" data-description="Link to the LibNPDB database." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 w-full text-center sm:w-auto">LibNPDB</a>
-            <a href="#" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 w-full text-center sm:w-auto">Contact Instructor</a>
+    <nav class="flex justify-center py-4">
+        <div class="flex space-x-4">
+            <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Home</a>
+            <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">View Marks</a>
+            <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Instructions</a>
+            <a href="#" data-name="LibNPDB" data-description="Link to the LibNPDB database." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">LibNPDB</a>
+            <a href="#" data-name="Contact Instructor" data-description="Contact information for your instructor." class="nav-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Contact Instructor</a>
         </div>
     </nav>
 
-    <main id="marks-view" class="container mx-auto px-4">
+    <main id="marks-view" class="container mx-auto">
         <div id="search-container">
             <input type="text" id="student-number-input" placeholder="Enter your student number" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
             <p id="input-caption" class="text-sm text-gray-500 mt-1">Enter your student number</p>
             <div id="error-message" class="error-message hidden"></div>
         </div>
-        <button id="search-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300 w-full sm:w-auto">Enter</button>
-        <div id="results-container" class="hidden w-full">
-            <div class="overflow-x-auto rounded-md shadow-md mt-4">
-                <table id="result-table">
-                    <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>Student Number</th>
-                            <th>Med Exam</th>
-                            <th>Practical Med Exam</th>
-                            <th>Quiz Marks</th>
-                            <th>Total Marks</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        </tbody>
-                </table>
-            </div>
+        <button id="search-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">Enter</button>
+        <div id="results-container" class="hidden">
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student Number</th>
+                        <th>Med Exam</th>
+                        <th>Practical Med Exam</th>
+                        <th>Quiz Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
             <p id="percentile-calculation" class="mt-4 text-gray-600"></p>
-            <button id="review-request-button" class="mt-4 bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors duration-300 w-full sm:w-auto">طلب مراجعة</button>
+            <button id="review-request-button" class="mt-4 bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors duration-300">طلب مراجعة</button>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-white py-6 px-4">
+    <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
-            <div class="mb-4 flex flex-wrap justify-center space-x-4">
+            <div class="mb-4">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-facebook-f text-lg"></i></a>
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-instagram text-lg"></i></a>
                 <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mr-4"><i class="fab fa-researchgate text-lg"></i></a>
                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white"><i class="fab fa-youtube text-lg"></i></a>
             </div>
-            <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-4">
+            <div class="flex justify-center space-x-4 mb-4">
                 <a href="#" data-name="Home" data-description="Welcome to the Medicinal Chemistry II Student Portal." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Home</a>
                 <a href="#" data-name="View Marks" data-description="This page allows you to view your marks for assignments, quizzes, and exams." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">View Marks</a>
                 <a href="#" data-name="Instructions" data-description="Here you can find instructions on how to use this portal." class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Instructions</a>
@@ -288,8 +283,7 @@
         });
 
         reviewRequestButton.addEventListener('click', function() {
-            // Open Google Form link in a new tab
-            window.open('https://docs.google.com/forms/d/e/1FAIpQLSftK-oe2RY9xGR8nzKFBOlndd_WWDq2nh-UH_Qe3tWGGoKeMw/viewform?usp=header', '_blank');
+            showModal('This feature will be connected to a Google Form soon!');
         });
 
         async function displayResults(studentNumber) {
@@ -321,10 +315,11 @@
             const studentData = dataset.find(student => String(student['Student Number']) === String(studentNumber));
 
             if (studentData) {
-                // Parse marks to numbers for calculation
-                const medExam = parseFloat(studentData['Med Exam']);
-                const practicalMedExam = parseFloat(studentData['Practical Med Exam']);
-                const quizMarks = parseFloat(studentData['Quiz Marks']);
+                // *** CORRECTION APPLIED HERE ***
+                // Parse marks to numbers for calculation, replacing comma with period
+                const medExam = parseFloat(String(studentData['Med Exam']).replace(',', '.'));
+                const practicalMedExam = parseFloat(String(studentData['Practical Med Exam']).replace(',', '.'));
+                const quizMarks = parseFloat(String(studentData['Quiz Marks']).replace(',', '.'));
 
                 const totalMarks = medExam + practicalMedExam + quizMarks;
                 const newRow = document.createElement('tr');
@@ -351,8 +346,9 @@
             const studentData = dataset.find(student => String(student['Student Number']) === String(studentNumber));
             if (!studentData) return 0;
 
-            // Parse marks to numbers for calculation
-            const studentTotalMarks = parseFloat(studentData['Med Exam']) + parseFloat(studentData['Practical Med Exam']) + parseFloat(studentData['Quiz Marks']);
+            // *** CORRECTION APPLIED HERE ***
+            // Parse marks to numbers for calculation, replacing comma with period
+            const studentTotalMarks = parseFloat(String(studentData['Med Exam']).replace(',', '.')) + parseFloat(String(studentData['Practical Med Exam']).replace(',', '.')) + parseFloat(String(studentData['Quiz Marks']).replace(',', '.'));
             let lowerCount = 0;
             const otherStudents = dataset.filter(otherStudent => String(otherStudent['Student Number']) !== String(studentNumber));
 
@@ -361,7 +357,8 @@
             }
 
             for (let otherStudent of otherStudents) {
-                const otherTotalMarks = parseFloat(otherStudent['Med Exam']) + parseFloat(otherStudent['Practical Med Exam']) + parseFloat(otherStudent['Quiz Marks']);
+                // *** CORRECTION APPLIED HERE ***
+                const otherTotalMarks = parseFloat(String(otherStudent['Med Exam']).replace(',', '.')) + parseFloat(String(otherStudent['Practical Med Exam']).replace(',', '.')) + parseFloat(String(otherStudent['Quiz Marks']).replace(',', '.'));
                 if (otherTotalMarks < studentTotalMarks) {
                     lowerCount++;
                 }

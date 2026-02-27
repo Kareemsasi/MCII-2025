@@ -1,176 +1,8 @@
 [
   {
-    "Student Name": "عصام محمد سليمان الهبهاب",
-    "Student Number": "1010646",
-    "Med Exam": "8.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "شذى احمد رجب المسعودي",
-    "Student Number": "7171028",
-    "Med Exam": "12.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رقية البشير عياد هروس",
-    "Student Number": "7171080",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ام الخير جمعة الفرجاني المبروك",
-    "Student Number": "7181021",
-    "Med Exam": "16.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حنان أبوبكر محمد شعيب",
-    "Student Number": "7181039",
-    "Med Exam": "13.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سهام الصديق خليل الصغير",
-    "Student Number": "7181066",
-    "Med Exam": "16.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "هبة محمد صالح خالد محمد",
-    "Student Number": "7181135",
-    "Med Exam": "16.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبدالله عبدالحميد الجيلاني بوسنان",
-    "Student Number": "7181180",
-    "Med Exam": "17.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ابراهيم حسين بشير امليصدي",
-    "Student Number": "7191026",
-    "Med Exam": "17",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اروى مصباح رمضان البوري",
-    "Student Number": "7191031",
-    "Med Exam": "13.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اماني احمد علي زوبي",
-    "Student Number": "7191040",
-    "Med Exam": "15.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "باسمة امحمد محمد بن حميدة",
-    "Student Number": "7191057",
-    "Med Exam": "13.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رويدة فرج عبدالسلام قرقوم",
-    "Student Number": "7191085",
-    "Med Exam": "14",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سعاد محمود احمد كبلان",
-    "Student Number": "7191096",
-    "Med Exam": "15.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبدالله محمد محمد الماني",
-    "Student Number": "7191119",
-    "Med Exam": "10.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عدنان تحسين احمد مياسه",
-    "Student Number": "7191124",
-    "Med Exam": "15.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "علي محمد محمد قليوان",
-    "Student Number": "7191129",
-    "Med Exam": "15.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة محمد علي الامين ابوفناس",
-    "Student Number": "7191135",
-    "Med Exam": "17",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ملاك حسين علي السويسي",
-    "Student Number": "7191142",
-    "Med Exam": "14.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "محمد مفتاح محمد الزواوي",
-    "Student Number": "7191154",
-    "Med Exam": "16",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "هديل صلاح الدين سالم ابو عود",
-    "Student Number": "7191167",
-    "Med Exam": "13.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ساره محمود إمحمد أبوختاله",
-    "Student Number": "7191179",
-    "Med Exam": "10.4",
+    "Student Name": "ابتهال النعاس عبدالله النعاس",
+    "Student Number": "7211001",
+    "Med Exam": "16.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -179,6 +11,30 @@
     "Student Name": "ابتهال عبد الله صالح صيدون",
     "Student Number": "7201003",
     "Med Exam": "16.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ابراهيم حسين بشير امليمدي",
+    "Student Number": "7191026",
+    "Med Exam": "17",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ابراهيم خليل ابراهيم السعداوي",
+    "Student Number": "7211006",
+    "Med Exam": "17.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "احمد محمد محمد شلغوم",
+    "Student Number": "7211009",
+    "Med Exam": "16.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -200,7 +56,15 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "اريج سليمان عيسى معافي",
+    "Student Name": "اروى مصباح رمضان البوري",
+    "Student Number": "7191031",
+    "Med Exam": "13.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اريج سليمان عيسى معافى",
     "Student Number": "7201017",
     "Med Exam": "19.4",
     "Practical Med Exam": "0",
@@ -216,9 +80,33 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "اسراء امحمد علي أولاد حسين",
+    "Student Number": "7211255",
+    "Med Exam": "15.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "اسراء إسماعيل جبريل اشتيوي",
     "Student Number": "7201019",
     "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اسراء سالم علي النعيري",
+    "Student Number": "7211016",
+    "Med Exam": "16.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اسراء عمر مصباح جبريل",
+    "Student Number": "7211020",
+    "Med Exam": "17.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -240,6 +128,14 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "اسراء مصطفى ابراهيم بطرونه",
+    "Student Number": "7211019",
+    "Med Exam": "17.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "اسراء نبيل توفيق صالح",
     "Student Number": "7201022",
     "Med Exam": "18.2",
@@ -248,7 +144,7 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "اسماء امحمد عمران أبويزيدعه",
+    "Student Name": "اسماء امحمد عمران ابوبريدعه",
     "Student Number": "7201023",
     "Med Exam": "15.6",
     "Practical Med Exam": "0",
@@ -256,7 +152,23 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "اسماء صالح عبد السلام الفقص الفيتوري",
+    "Student Name": "اسماء جمال سليمان الحرش",
+    "Student Number": "7211021",
+    "Med Exam": "16.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اسماء حسين سالم الجمل",
+    "Student Number": "7211022",
+    "Med Exam": "17.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اسماء صالح عبد السلام الفيتوري",
     "Student Number": "7201025",
     "Med Exam": "14.6",
     "Practical Med Exam": "0",
@@ -274,6 +186,22 @@
   {
     "Student Name": "اسماء علي مختار شعيب",
     "Student Number": "7201027",
+    "Med Exam": "15.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اسماء محمد عمران اشتيوي",
+    "Student Number": "7211250",
+    "Med Exam": "17.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اسماء مصطفى عمر اشكى",
+    "Student Number": "7211056",
     "Med Exam": "15.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
@@ -312,6 +240,14 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "الاء يوسف عمر بادي",
+    "Student Number": "7211059",
+    "Med Exam": "17.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "الحسن علي سعيد الناري",
     "Student Number": "7201034",
     "Med Exam": "18",
@@ -320,9 +256,65 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "ام السعد علي محمد الصميعيط المدني",
+    "Student Name": "المنذر محمد علي بن طاهر",
+    "Student Number": "7211027",
+    "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ام الخير جمعة الفرجاني المبروك",
+    "Student Number": "7181021",
+    "Med Exam": "16.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ام السعد علي المسيميط المدني",
     "Student Number": "7201037",
     "Med Exam": "18.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "امال مبارك بن أحمد منتصر",
+    "Student Number": "7211028",
+    "Med Exam": "18",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اماني احمد علي زوبي",
+    "Student Number": "7191040",
+    "Med Exam": "15.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "امنة شعبان اشتيوي شنينة",
+    "Student Number": "7201040",
+    "Med Exam": "2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "امنة عبدالله سالم الرملي",
+    "Student Number": "7211004",
+    "Med Exam": "17.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "امنة علي الفيتوري ابويريدعة",
+    "Student Number": "7211034",
+    "Med Exam": "14",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -345,7 +337,7 @@
   },
   {
     "Student Name": "امنة محمد امحمد الاخطل",
-    "Student Number": "7201043",
+    "Student Number": "7211035",
     "Med Exam": "19",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
@@ -368,9 +360,49 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "اية حسن خلف الله خلف الله",
+    "Student Number": "7211049",
+    "Med Exam": "17.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "اية عبد الفتاح خليفة الشاوش",
     "Student Number": "7201047",
     "Med Exam": "13.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اية علي محمد الرمالي",
+    "Student Number": "7211045",
+    "Med Exam": "16.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اية محمد محمد اغليو",
+    "Student Number": "7211051",
+    "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اية محمد محمد العويب",
+    "Student Number": "7221001",
+    "Med Exam": "15.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "اية محمود حسين الزرمالي",
+    "Student Number": "7211052",
+    "Med Exam": "17.4",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -392,6 +424,14 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "ايمان صالح محمد شيبة",
+    "Student Number": "7211047",
+    "Med Exam": "17",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "ايمان محمود عبد الوكيل الرعيض",
     "Student Number": "7201052",
     "Med Exam": "15.6",
@@ -400,9 +440,33 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "إبراهيم عبد العاطي ضو",
+    "Student Number": "7201005",
+    "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "باسمة امحمد محمد بن حميدة",
+    "Student Number": "7191057",
+    "Med Exam": "13.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "براءه سالم إبراهيم جحا",
     "Student Number": "7201053",
     "Med Exam": "13.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "تسنيم الهادي علي بن غريبة",
+    "Student Number": "7211065",
+    "Med Exam": "17.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -424,7 +488,7 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "حسناء عبد الباسط عبد الحميد عبد الحميد",
+    "Student Name": "حسناء عبد الباسط عبد الحميد",
     "Student Number": "7201059",
     "Med Exam": "18",
     "Practical Med Exam": "0",
@@ -440,9 +504,49 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "حليمة ابراهيم عبدالجليل عبدالجليل",
+    "Student Number": "7211072",
+    "Med Exam": "19.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "حليمة يوسف صالح الفقيه",
+    "Student Number": "7211071",
+    "Med Exam": "13.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "حنان أبوبكر محمد شغيب",
+    "Student Number": "7181039",
+    "Med Exam": "13.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "حنان عبد السلام خليفه زيد",
+    "Student Number": "7201066",
+    "Med Exam": "18.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "حنين عبد الفتاح محمد ابو شويقير",
     "Student Number": "7201063",
     "Med Exam": "17",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "حنين مفتاح علي الأسطى",
+    "Student Number": "7211073",
+    "Med Exam": "13.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -456,9 +560,33 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "حنان عبد السلام خليفه زيد",
-    "Student Number": "7201066",
+    "Student Name": "حواء سالم سليمان حسين",
+    "Student Number": "7211075",
     "Med Exam": "18.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "حواء محمد الغرياني",
+    "Student Number": "7211258",
+    "Med Exam": "13",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "حواء محمد الهادي ابوعجيله",
+    "Student Number": "7211077",
+    "Med Exam": "14.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "خديجة البشير خليل",
+    "Student Number": "7211259",
+    "Med Exam": "14.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -475,6 +603,38 @@
     "Student Name": "خديجة سالم مصطفى الشوين",
     "Student Number": "7201068",
     "Med Exam": "11.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "خديجة علي بشير الحداد",
+    "Student Number": "7211080",
+    "Med Exam": "17",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "دعاء ابراهيم يوسف اللصاقة",
+    "Student Number": "7211085",
+    "Med Exam": "17.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "دنيا منصور علي برول",
+    "Student Number": "7211087",
+    "Med Exam": "17.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رتاج سالم يونس أبورويص",
+    "Student Number": "7211088",
+    "Med Exam": "15.4",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -504,9 +664,57 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "رجاء محمد عبدالله الشويرف",
+    "Student Number": "7211091",
+    "Med Exam": "15.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رجب احمد رجب المسعودي",
+    "Student Number": "7211092",
+    "Med Exam": "14.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رحاب محمود بشير البرقلي",
+    "Student Number": "7211093",
+    "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رحاب مفتاح مسعود الدبار",
+    "Student Number": "7211094",
+    "Med Exam": "15.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رداد عمر محمد النعاس",
+    "Student Number": "7211097",
+    "Med Exam": "16.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "ردينة رضا عبد الله القويري",
     "Student Number": "7201078",
     "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رقية البشير عياد هروس",
+    "Student Number": "7171080",
+    "Med Exam": "17.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -520,7 +728,7 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "رنده انور علي غليو",
+    "Student Name": "رنده أنور علي غليو",
     "Student Number": "7201083",
     "Med Exam": "17.6",
     "Practical Med Exam": "0",
@@ -544,9 +752,57 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "رهف حسين أبوبكر دياب",
+    "Student Number": "7211098",
+    "Med Exam": "18",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رويدة فرج عبدالسلام قرقوم",
+    "Student Number": "7191085",
+    "Med Exam": "14",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رويده اسماعيل بشير بادي",
+    "Student Number": "7211100",
+    "Med Exam": "14",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "رؤى عصام عبدالهادي شنيشح",
+    "Student Number": "7211005",
+    "Med Exam": "17.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "ريان الهادي عبد السلام الشريف",
     "Student Number": "7201089",
     "Med Exam": "14.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ريم طارق شقلوف",
+    "Student Number": "7201092",
+    "Med Exam": "1",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ريهام الحسين علي عريفه",
+    "Student Number": "7211101",
+    "Med Exam": "14.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -568,6 +824,14 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "زينب محمد علي العجيل",
+    "Student Number": "7211108",
+    "Med Exam": "18.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "سارة امحمد الشعافي",
     "Student Number": "7201096",
     "Med Exam": "14.4",
@@ -576,9 +840,17 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "سالمة مبروك عمر المحيشي",
-    "Student Number": "7201099",
-    "Med Exam": "16",
+    "Student Name": "سارة أحمد محمد التائب",
+    "Student Number": "7211110",
+    "Med Exam": "12.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ساره محمود إمحمد أبوختاله",
+    "Student Number": "7191179",
+    "Med Exam": "10.4",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -592,6 +864,30 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "سالمة مبروك عمر المحيشي",
+    "Student Number": "7201099",
+    "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سالمه علي الأمين الرملي",
+    "Student Number": "7211115",
+    "Med Exam": "18.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ساميه سليمان مختار اسماعيل",
+    "Student Number": "7211117",
+    "Med Exam": "16.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "سجى احمد إبراهيم شيرة",
     "Student Number": "7201102",
     "Med Exam": "13.8",
@@ -600,9 +896,49 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "سجى عمران الهادي عاشور",
+    "Student Number": "7211118",
+    "Med Exam": "15",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سراج الدين أبو القاسم محمد أبوشيبة",
+    "Student Number": "7211119",
+    "Med Exam": "16.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سعاد محمود احمد كبلان",
+    "Student Number": "7191096",
+    "Med Exam": "15.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سلمي يوسف الهادي ابورويص",
+    "Student Number": "7211123",
+    "Med Exam": "14.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "سمر محمد حماد ابوشاويش",
     "Student Number": "7201107",
     "Med Exam": "16.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سمية علي محمد عبدالله",
+    "Student Number": "7211126",
+    "Med Exam": "15.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -624,9 +960,49 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "سناء مصطفى الزبيدي",
+    "Student Number": "7191008",
+    "Med Exam": "0",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سندس عمران مفتاح الصل",
+    "Student Number": "7211128",
+    "Med Exam": "14.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سندس محمد منصور معاتقي",
+    "Student Number": "7211129",
+    "Med Exam": "18.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "سهام الصديق خليل الصغير",
+    "Student Number": "7181066",
+    "Med Exam": "16.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "سهل محمد عبد الله المازق",
     "Student Number": "7201111",
     "Med Exam": "15.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "شذى احمد رجب المسعودي",
+    "Student Number": "7171028",
+    "Med Exam": "12.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -640,9 +1016,25 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "شيماء عبدالعاطي ابراهيم اللبيدي",
+    "Student Number": "7211133",
+    "Med Exam": "15.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "شيماء محمد عبد السلام ابوزقية",
     "Student Number": "7201114",
     "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "صبا محمد محمد غزوان",
+    "Student Number": "7211134",
+    "Med Exam": "17.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -659,6 +1051,22 @@
     "Student Name": "عائشة جمال سالم بن عمران",
     "Student Number": "7201117",
     "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عائشة عبدالله حسين بيت المال",
+    "Student Number": "7211140",
+    "Med Exam": "14.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عائشة محمد عمر بادي",
+    "Student Number": "7211141",
+    "Med Exam": "16.4",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -696,6 +1104,70 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "عبدالرحمن سالم مفتاح حمد",
+    "Student Number": "7211143",
+    "Med Exam": "17.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عبدالرحمن ميلاد حامد الكيلاني",
+    "Student Number": "7211145",
+    "Med Exam": "13.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عبدالله عبدالحميد الجيلاني بوسنان",
+    "Student Number": "7181180",
+    "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عبدالله محمد عبدالله قريره",
+    "Student Number": "7211148",
+    "Med Exam": "12.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عبدالله محمد محمد الماني",
+    "Student Number": "7191119",
+    "Med Exam": "10.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عبيدة مختار عمر الزين",
+    "Student Number": "7211151",
+    "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عبير محمد رضوان شاكر",
+    "Student Number": "7211152",
+    "Med Exam": "18.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عدنان تحسين احمد مياسه",
+    "Student Number": "7191124",
+    "Med Exam": "15.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "عز الدين عبد الوهاب علي موسى",
     "Student Number": "7201128",
     "Med Exam": "17",
@@ -704,9 +1176,49 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "عصام محمد سليمان الهبهاب",
+    "Student Number": "1010646",
+    "Med Exam": "8.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "عفاف محمد ساسي اهويدي",
+    "Student Number": "7211154",
+    "Med Exam": "16.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "علي احمد محمد الغويل",
+    "Student Number": "7211156",
+    "Med Exam": "17.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "علي محمد محمد قليوان",
+    "Student Number": "7191129",
+    "Med Exam": "15.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "غادة محمد سليمان اعريبي",
     "Student Number": "7201130",
     "Med Exam": "18.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "غزلان عبدالسلام محمد مولود",
+    "Student Number": "7211161",
+    "Med Exam": "14.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -728,9 +1240,49 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "فاطمة الزهراء رحيمة علي ياوه",
+    "Student Name": "فاطمة احمد علي الاربش",
+    "Student Number": "7211164",
+    "Med Exam": "16.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة الزهراء رحيمة علي باوه",
     "Student Number": "7201135",
     "Med Exam": "14.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة الزهراء علي الصادي",
+    "Student Number": "7211179",
+    "Med Exam": "16.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة حمد محمد علي الجهمي",
+    "Student Number": "7211166",
+    "Med Exam": "17.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة سالم محمد عقيبة",
+    "Student Number": "7211167",
+    "Med Exam": "16.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة فتح الله إبراهيم عامر",
+    "Student Number": "7211171",
+    "Med Exam": "14.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -744,9 +1296,49 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "فاطمة فيصل إبراهيم اندش",
+    "Student Number": "7211172",
+    "Med Exam": "14.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "فاطمة محمد احمد الجطلاوي",
     "Student Number": "7201143",
     "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة محمد علي الامين ابوفناس",
+    "Student Number": "7191135",
+    "Med Exam": "17",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة محمد علي الهشم",
+    "Student Number": "7211174",
+    "Med Exam": "15.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة محمد علي فرقد",
+    "Student Number": "7211175",
+    "Med Exam": "11.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "فاطمة محمد مصباح زقلام",
+    "Student Number": "7211176",
+    "Med Exam": "16.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -768,9 +1360,25 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "محمد إبراهيم علي ابو ودن",
-    "Student Number": "7201151",
-    "Med Exam": "16.2",
+    "Student Name": "فاطمة يوسف صالح الفقيه",
+    "Student Number": "7221002",
+    "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "لينة جمال علي السعداوي",
+    "Student Number": "7211187",
+    "Med Exam": "15.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ليندا بهاء الدين عبدالهادي ديب طه",
+    "Student Number": "7211188",
+    "Med Exam": "17.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -792,6 +1400,22 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "محمد الهمالي محمد ابوعزوم",
+    "Student Number": "7201163",
+    "Med Exam": "10.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "محمد إبراهيم علي ابو ودن",
+    "Student Number": "7201151",
+    "Med Exam": "16.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "محمد سالم أبو شحمة الاوبي",
     "Student Number": "7201155",
     "Med Exam": "16.6",
@@ -800,17 +1424,17 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "محمد يوسف محمد قميغ",
-    "Student Number": "7201162",
-    "Med Exam": "14.8",
+    "Student Name": "محمد مفتاح محمد الزواوي",
+    "Student Number": "7191154",
+    "Med Exam": "16",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
   },
   {
-    "Student Name": "محمد الهمالي محمد ابوعزوم",
-    "Student Number": "7201163",
-    "Med Exam": "10.8",
+    "Student Name": "محمد يوسف محمد قميغ",
+    "Student Number": "7201162",
+    "Med Exam": "14.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -840,6 +1464,22 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "مرام علي الهادي الزيداني",
+    "Student Number": "7211195",
+    "Med Exam": "18.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "مروج محمد مفتاح الشقمائي",
+    "Student Number": "7211196",
+    "Med Exam": "18.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "مروه عبد السلام مصباح عبد الرحمن",
     "Student Number": "7201170",
     "Med Exam": "15",
@@ -856,9 +1496,89 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "معاذ صالح محمد الزواوي",
+    "Student Number": "7221004",
+    "Med Exam": "17.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ملاك أبو بكر الجبو",
+    "Student Number": "7211265",
+    "Med Exam": "16.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ملاك حسين علي السويسي",
+    "Student Number": "7191142",
+    "Med Exam": "14.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "ملاك عبدالله عمران الغنودي",
+    "Student Number": "7211199",
+    "Med Exam": "16.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "ملاك يوسف علي اللبيدي",
     "Student Number": "7201176",
     "Med Exam": "14",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "منال محمد يوسف شاقان",
+    "Student Number": "7211202",
+    "Med Exam": "18.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "منال مصطفى حسين الرائس",
+    "Student Number": "7211203",
+    "Med Exam": "16.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "منى علي عبد الحميد بالحاج",
+    "Student Number": "7211261",
+    "Med Exam": "18",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "مني سالم محمود السكير",
+    "Student Number": "7211205",
+    "Med Exam": "14.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "مني فتحي محمد بيك",
+    "Student Number": "7211206",
+    "Med Exam": "15.8",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "منية يوسف المهدي اسيمير",
+    "Student Number": "7211208",
+    "Med Exam": "16.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -872,9 +1592,33 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "مها يوسف عاشور باكير",
+    "Student Number": "7211209",
+    "Med Exam": "17.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "مهند عبد اللطيف محمد أبو زهو",
+    "Student Number": "7221006",
+    "Med Exam": "16",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "ميسون محمد فرج عقيل",
     "Student Number": "7201184",
     "Med Exam": "13.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "نجاح عمر علي التيفه",
+    "Student Number": "7211212",
+    "Med Exam": "15.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -899,6 +1643,30 @@
     "Student Name": "نسيبة إبراهيم علي شكاب",
     "Student Number": "7201191",
     "Med Exam": "14.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "نهى المهدي صالح سويب",
+    "Student Number": "7211252",
+    "Med Exam": "14.6",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "نهى عبدالقادر محمد ابوجلاله",
+    "Student Number": "7211217",
+    "Med Exam": "19.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "نور الدين ابراهيم بشير الفقي",
+    "Student Number": "7211218",
+    "Med Exam": "15.2",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -952,9 +1720,17 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "هديل احمد التهامي مليطان",
+    "Student Name": "هبة محمد صالح خالد محمد",
+    "Student Number": "7181135",
+    "Med Exam": "16.2",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "هدى خليفه سالم المحجوب",
     "Student Number": "7201201",
-    "Med Exam": "15.6",
+    "Med Exam": "15.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -968,9 +1744,9 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "هدى خليفه سالم المحجوب",
+    "Student Name": "هديل احمد التهامي مليطان",
     "Student Number": "7201203",
-    "Med Exam": "15.8",
+    "Med Exam": "15.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -979,6 +1755,14 @@
     "Student Name": "هديل الهادي صالح الباقرمي",
     "Student Number": "7201205",
     "Med Exam": "15",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
+    "Student Name": "هديل صلاح الدين سالم ابوعود",
+    "Student Number": "7191167",
+    "Med Exam": "13.8",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -1000,753 +1784,17 @@
     "Total Marks": "0"
   },
   {
+    "Student Name": "هناء عمر ساسي",
+    "Student Number": "7211263",
+    "Med Exam": "15.4",
+    "Practical Med Exam": "0",
+    "Quiz Marks": "0",
+    "Total Marks": "0"
+  },
+  {
     "Student Name": "هيثم إبراهيم حمد بوفاس",
     "Student Number": "7201211",
     "Med Exam": "17.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "وداد مسعود خليفه عيسى",
-    "Student Number": "7201213",
-    "Med Exam": "13.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "وسيم محمد علي البهلول",
-    "Student Number": "7201217",
-    "Med Exam": "16",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "يمنى محمد علي الاصلم زعبية",
-    "Student Number": "7201230",
-    "Med Exam": "14.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ابتهال النعاس عبدالله النعاس",
-    "Student Number": "7211001",
-    "Med Exam": "16.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "امنة عبدالله سالم الرملي",
-    "Student Number": "7211004",
-    "Med Exam": "17.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رؤى عصام عبدالهادي شنيشح",
-    "Student Number": "7211005",
-    "Med Exam": "17.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ابراهيم خليل ابراهيم السعداوي",
-    "Student Number": "7211006",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "احمد محمد محمد شلغوم",
-    "Student Number": "7211009",
-    "Med Exam": "16.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسراء سالم علي النعيري",
-    "Student Number": "7211016",
-    "Med Exam": "16.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسراء مصطفى ابراهيم بطرونه",
-    "Student Number": "7211019",
-    "Med Exam": "17.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسراء عمر مصباح جبريل",
-    "Student Number": "7211020",
-    "Med Exam": "17.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسماء جمال سليمان الحرش",
-    "Student Number": "7211021",
-    "Med Exam": "16.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسماء حسين سالم الجمل",
-    "Student Number": "7211022",
-    "Med Exam": "17.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "المنذر محمد علي بن طاهر",
-    "Student Number": "7211027",
-    "Med Exam": "17.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "امال مبارك بن أحمد منتصر",
-    "Student Number": "7211028",
-    "Med Exam": "18",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "امنة علي الفيتوري ابويريدعة",
-    "Student Number": "7211034",
-    "Med Exam": "14",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اية علي محمد الرمالي",
-    "Student Number": "7211045",
-    "Med Exam": "16.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ايمان صالح محمد شيبة",
-    "Student Number": "7211047",
-    "Med Exam": "17",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اية حسن خلف الله خلف الله",
-    "Student Number": "7211049",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اية محمد محمد اغليو",
-    "Student Number": "7211051",
-    "Med Exam": "16",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اية محمود حسين الزرمالي",
-    "Student Number": "7211052",
-    "Med Exam": "17.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسماء مصطفى عمر اشكى",
-    "Student Number": "7211056",
-    "Med Exam": "15.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "الاء يوسف عمر بادي",
-    "Student Number": "7211059",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "تسنيم الهادي علي بن غريبة",
-    "Student Number": "7211065",
-    "Med Exam": "17.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حليمة يوسف صالح الفقيه",
-    "Student Number": "7211071",
-    "Med Exam": "13.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حليمة ابراهيم عبدالجليل عبدالجليل",
-    "Student Number": "7211072",
-    "Med Exam": "19.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حنين مفتاح علي الأسطى",
-    "Student Number": "7211073",
-    "Med Exam": "13.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حواء سالم سليمان حسين",
-    "Student Number": "7211075",
-    "Med Exam": "18.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حواء محمد الهادي ابوعجيله",
-    "Student Number": "7211077",
-    "Med Exam": "14.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "خديجة علي بشير الحداد",
-    "Student Number": "7211080",
-    "Med Exam": "17",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "دعاء ابراهيم يوسف اللصاقة",
-    "Student Number": "7211085",
-    "Med Exam": "17.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "دنيا منصور علي برول",
-    "Student Number": "7211087",
-    "Med Exam": "17.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رتاج سالم يونس أبورويص",
-    "Student Number": "7211088",
-    "Med Exam": "15.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رجاء محمد عبدالله الشويرف",
-    "Student Number": "7211091",
-    "Med Exam": "15.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رجب احمد رجب المسعودي",
-    "Student Number": "7211092",
-    "Med Exam": "14.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رحاب محمود بشير البرقلي",
-    "Student Number": "7211093",
-    "Med Exam": "16",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رحاب مفتاح مسعود الدبار",
-    "Student Number": "7211094",
-    "Med Exam": "15.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رداد عمر محمد النعاس",
-    "Student Number": "7211097",
-    "Med Exam": "16.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رهف حسين أبوبكر دياب",
-    "Student Number": "7211098",
-    "Med Exam": "18",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "رويده اسماعيل بشير بادي",
-    "Student Number": "7211100",
-    "Med Exam": "14",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ريهام الحسين علي عريفه",
-    "Student Number": "7211101",
-    "Med Exam": "14.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "زينب محمد علي العجيل",
-    "Student Number": "7211108",
-    "Med Exam": "18.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سارة أحمد محمد التائب",
-    "Student Number": "7211110",
-    "Med Exam": "12.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سالمه علي الأمين الرملي",
-    "Student Number": "7211115",
-    "Med Exam": "18.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ساميه سليمان مختار اسماعيل",
-    "Student Number": "7211117",
-    "Med Exam": "16.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سجى عمران الهادي عاشور",
-    "Student Number": "7211118",
-    "Med Exam": "15",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سراج الدين أبو القاسم محمد أبوشيبة",
-    "Student Number": "7211119",
-    "Med Exam": "16.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سلمي يوسف الهادي ابورويص",
-    "Student Number": "7211123",
-    "Med Exam": "14.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سمية علي محمد عبدالله",
-    "Student Number": "7211126",
-    "Med Exam": "15.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سندس عمران مفتاح الصل",
-    "Student Number": "7211128",
-    "Med Exam": "14.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "سندس محمد منصور معاتقي",
-    "Student Number": "7211129",
-    "Med Exam": "18.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "شيماء عبدالعاطي ابراهيم اللبيدي",
-    "Student Number": "7211133",
-    "Med Exam": "15.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "صبا محمد محمد غزوان",
-    "Student Number": "7211134",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عائشة عبدالله حسين بيت المال",
-    "Student Number": "7211140",
-    "Med Exam": "14.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عائشة محمد عمر بادي",
-    "Student Number": "7211141",
-    "Med Exam": "16.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبدالرحمن سالم مفتاح حمد",
-    "Student Number": "7211143",
-    "Med Exam": "17.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبدالرحمن ميلاد حامد الكيلاني",
-    "Student Number": "7211145",
-    "Med Exam": "13.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبدالله محمد عبدالله قريره",
-    "Student Number": "7211148",
-    "Med Exam": "12.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبيدة مختار عمر الزين",
-    "Student Number": "7211151",
-    "Med Exam": "16",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عبير محمد رضوان شاكر",
-    "Student Number": "7211152",
-    "Med Exam": "18.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "عفاف محمد ساسي اهويدي",
-    "Student Number": "7211154",
-    "Med Exam": "16.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "علي احمد محمد الغويل",
-    "Student Number": "7211156",
-    "Med Exam": "17.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "غزلان عبدالسلام محمد مولود",
-    "Student Number": "7211161",
-    "Med Exam": "14.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة احمد علي الاربش",
-    "Student Number": "7211164",
-    "Med Exam": "16.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة حمد محمد علي الجهمي",
-    "Student Number": "7211166",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة سالم محمد عقيبة",
-    "Student Number": "7211167",
-    "Med Exam": "16.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة فتح الله إبراهيم عامر",
-    "Student Number": "7211171",
-    "Med Exam": "14.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة فيصل إبراهيم اندش",
-    "Student Number": "7211172",
-    "Med Exam": "14.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة محمد علي الهشم",
-    "Student Number": "7211174",
-    "Med Exam": "15.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة محمد علي فرقد",
-    "Student Number": "7211175",
-    "Med Exam": "11.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة محمد مصباح زقلام",
-    "Student Number": "7211176",
-    "Med Exam": "16.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة الزهراء علي الصادي",
-    "Student Number": "7211179",
-    "Med Exam": "16.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "لينة جمال علي السعداوي",
-    "Student Number": "7211187",
-    "Med Exam": "15.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ليندا بهاء الدين عبدالهادي ديب طه",
-    "Student Number": "7211188",
-    "Med Exam": "17.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "مرام علي الهادي الزيداني",
-    "Student Number": "7211195",
-    "Med Exam": "18.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "مروج محمد مفتاح الشقمائي",
-    "Student Number": "7211196",
-    "Med Exam": "18.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "ملاك عبدالله عمران الغنودي",
-    "Student Number": "7211199",
-    "Med Exam": "16.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "منال محمد يوسف شاقان",
-    "Student Number": "7211202",
-    "Med Exam": "18.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "منال مصطفى حسين الرائس",
-    "Student Number": "7211203",
-    "Med Exam": "16.4",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "مني سالم محمود السكير",
-    "Student Number": "7211205",
-    "Med Exam": "14.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "مني فتحي محمد بيك",
-    "Student Number": "7211206",
-    "Med Exam": "15.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "منية يوسف المهدي اسيمير",
-    "Student Number": "7211208",
-    "Med Exam": "16.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "مها يوسف عاشور باكير",
-    "Student Number": "7211209",
-    "Med Exam": "17.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "نجاح عمر علي التيفه",
-    "Student Number": "7211212",
-    "Med Exam": "15.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "نهى عبدالقادر محمد ابوجلاله",
-    "Student Number": "7211217",
-    "Med Exam": "19.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "نور الدين ابراهيم بشير الفقي",
-    "Student Number": "7211218",
-    "Med Exam": "15.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "هيفاء منير محمد درز",
-    "Student Number": "7211229",
-    "Med Exam": "15",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسماء محمد عمران اشتيوي",
-    "Student Number": "7211250",
-    "Med Exam": "17.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "نهى المهدي صالح سويب",
-    "Student Number": "7211252",
-    "Med Exam": "14.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "اسراء امحمد علي أولاد حسين",
-    "Student Number": "7211255",
-    "Med Exam": "15.6",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "حواء محمد الغرياني",
-    "Student Number": "7211258",
-    "Med Exam": "13",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "خديجة البشير خليل",
-    "Student Number": "7211259",
-    "Med Exam": "14.8",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "منى علي عبد الحميد بالحاج",
-    "Student Number": "7211261",
-    "Med Exam": "18",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
@@ -1760,49 +1808,41 @@
     "Total Marks": "0"
   },
   {
-    "Student Name": "هناء عمر ساسي",
-    "Student Number": "7211263",
-    "Med Exam": "15.4",
+    "Student Name": "هيفاء منير محمد درز",
+    "Student Number": "7211229",
+    "Med Exam": "15",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
   },
   {
-    "Student Name": "ملاك أبو بكر الجبو",
-    "Student Number": "7211265",
-    "Med Exam": "16.6",
+    "Student Name": "وداد مسعود خليفه عيسى",
+    "Student Number": "7201212",
+    "Med Exam": "13.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
   },
   {
-    "Student Name": "اية محمد محمد العويب",
-    "Student Number": "7221001",
-    "Med Exam": "15.2",
-    "Practical Med Exam": "0",
-    "Quiz Marks": "0",
-    "Total Marks": "0"
-  },
-  {
-    "Student Name": "فاطمة يوسف صالح الفقيه",
-    "Student Number": "7221002",
+    "Student Name": "وسيم محمد علي محمود ",
+    "Student Number": "7201213",
     "Med Exam": "16",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
   },
   {
-    "Student Name": "معاذ صالح محمد الزواوي",
-    "Student Number": "7221004",
-    "Med Exam": "17.4",
+    "Student Name": "ياسمين عبد السلام علي البهلول ",
+    "Student Number": "7201217",
+    "Med Exam": "16",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
   },
   {
-    "Student Name": "مهند عبد اللطيف محمد أبو زهو",
-    "Student Number": "7221006",
-    "Med Exam": "16",
+    "Student Name": "يمنى محمد علي الاصلم زعبية",
+    "Student Number": "7201230",
+    "Med Exam": "14.6",
     "Practical Med Exam": "0",
     "Quiz Marks": "0",
     "Total Marks": "0"
